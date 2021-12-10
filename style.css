@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: tomato;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.nav-bar::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: -100px;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid hsla(0, 0%, 0%, 0.6);
+
+}
+
+.nav-bar{
+    position: absolute;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height:100px;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    z-index: 1000;
+}
+
+
+a{
+    padding: 39px 0;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: hsla(9, 100%, 64%,0.7);
+    color: black;
+}
+
+.logo{
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    
+}
+
+video{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+section{
+    padding:2em 0 0 0;
+
+}
+
+main{
+    margin-top: 90vh;
+    
+    background-color: hsla(0,0%,0%,1);
+}
+
+.icon{
+    max-width: 1.25em;
+}
+
+.fit-icon{
+    max-width: 100px;
+    margin-bottom:1em;
+    display:block;
+}
+
+#staff{
+    display:flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: white;
+}
+
+
+#staff .card{
+    max-width: 50%;
+}
+
+.photo1, .photo2, .photo3, .photo4{
+    max-width:100%;
+    max-height:100%; 
+}
+
+ .photo5, .photo6, .photo7{
+    
+    max-width:100%;
+    max-height:100%;
+    
+}
+
+#about p{
+    padding:3em 10em;
+}
+
+.card{
+    padding:2em 3em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px hsla(0,0%,0%,.7);
+    font-weight: 700;
+    
+}
+
+#activities{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:stretch;
+    background-color: white;
+    padding:2em 0;
+}
+
+main h2{
+    font-size: 2em;
+    flex-basis: 100%;
+    font-weight: 700;
+    
+}
+
+#place{
+    position: relative;
+    display:grid;
+    grid-template: repeat(12,auto)/repeat(12,1fr);
+    
+}
+
+#place h2{
+    grid-area: 1/4/2/10;
+    text-align: center;
+}
+
+#place .photo1{
+    grid-area:2/1/6/11;
+    z-index:2;
+}
+
+#place .photo2{
+    grid-area:5/4/9/13;
+    z-index:1;
+}
+
+.filter{
+    position: relative;
+    grid-area:8/2/11/11;
+    z-index:0;
+}
+
+.filter::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: hsla(0,100%,0%,.15);
+    z-index:1;
+}
+
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 200px;
+    padding: 35px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsla(0,0%,0%,1);
+    color:white;
+}
