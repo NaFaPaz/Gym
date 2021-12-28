@@ -5,26 +5,26 @@
     <title>WorkOut Gym</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='style.css'>
-    <script src='script.js'></script>
+    <script src='script.js' defer></script>
 </head>
 <body>
     <header>
-        <div class="header">
-            <video src="./media/pexels-tima-miroshnichenko-5319759.mp4" autoplay muted loop></video>
-        </div>
-        <div class="nav-bar">
-                <img class="logo" src="./media/logo.jfif" alt="brand logo">
+    <img class="logo" src="./media/logo.jfif" alt="brand logo">
+    <nav class="nav-bar">
+                
                 <h1>WorkOut Gym</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about">Nosotros</a></li>
-                        <li><a href="#staff">Nuestros Coach</a></li>
-                        <li><a href="#where">Como llegar</a></li>
-                        <li><a href="#footer">Contacto</a></li>
-                    </ul>
-                </nav>
-        </div>
-        
+                <ul>
+                        <li ><a class="toggle" href="#about">Nosotros</a></li>
+                        <li ><a class="toggle" href="#staff">Nuestros Coach</a></li>
+                        <li ><a class="toggle" href="#where">Como llegar</a></li>
+                        <li ><a class="toggle" href="#footer">Contacto</a></li>
+                </ul>
+                
+        </nav>
+        <button type="button" class="menu-btn toggle"><div class="hamb"></div></button>
+        <div class="header">
+            <video src="./media/pexels-tima-miroshnichenko-5319759.mp4" autoplay loop></video>
+        </div> 
     </header>
 
     <main>
@@ -45,7 +45,7 @@
             <h2>Nuestras Instalaciones</h2>
             <img class="photo1" src="./media/anastase-maragos-FP7cfYPPUKM-unsplash.jpg" alt="">
             <img class="photo2" src="./media/brett-jordan-U2q73PfHFpM-unsplash.jpg" alt="">
-            <div  class="filter"><img class="photo4" src="./media/andrew-donovan-valdivia-AB7TcT_GVU0-unsplash.jpg" alt=""></div>
+            <div class="filter"><img class="photo4" src="./media/andrew-donovan-valdivia-AB7TcT_GVU0-unsplash.jpg" alt=""></div>
         </section>            
         <section id="staff">
             <h2>Nuestros Profesionales</h2>
@@ -69,14 +69,6 @@
     </main>
 
     <footer id="footer">
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#staff">Nuestros Coach</a></li>
-                <li><a href="#where">Como llegar</a></li>
-                <li><a href="#footer">Contacto</a></li>
-            </ul>
-        </nav>
         <span>Seguinos:
         <img class="icon" src="./media/facebook.svg" alt="facebook logo">
         <img class="icon" src="./media/instagram.svg" alt="instagram logo">
